@@ -2,7 +2,7 @@ export default function initTabNav() {
   const tabmenu = document.querySelectorAll('[data-tab="menu"] li');
   const tabcontent = document.querySelectorAll('[data-tab="content"] section');
 
-console.log(tabcontent)
+
 
   if (tabmenu && tabcontent) {
     tabcontent[0].classList.add("ativo");

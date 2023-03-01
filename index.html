@@ -16,13 +16,13 @@
 </head>
 
 <body>
- 
+ <div class="grid-container">
   <nav class="menu" data-menu="suave">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
       <li><a href="#contato">Contato</a></li>
-      <li><a href="http://origamid.com">Dev→</a></li>
+      <li><a data-modal="abrir" href="http://origamid.com">Entrar→</a></li>
     </ul>
   </nav>
 
@@ -123,6 +123,20 @@
   <footer class="copy">
     <p>Todos os direitos reservados.</p>
   </footer>
+</div>
+<section class="modal-container" data-modal="conteiner">
+  <div class="modal">
+    <button class="fechar" data-modal="fechar">X</button>
+    <form action="">
+      <label for="email">Email</label>
+      <input type="email" for="email" id="email">
+      <label for="senha">Senha</label>
+      <input type="password" for="senha" id="senha">
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+</section>
 
   <script type="module" src="./js/script.js"></script>
 </body>
