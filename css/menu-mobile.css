@@ -1,0 +1,62 @@
+[data-menu="button"]{
+  display: none;
+}
+
+@media (max-width: 700px){
+  [data-menu="button"]{
+    display: block;
+    background: #222;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: 'IMG Plex mono', monospace;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 300;
+  }
+  
+  [data-menu="button"]::before{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background-color: white;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+    transition: transform .3s;
+  }
+
+  [data-menu="button"].ativo::before{
+ transform: rotate(90deg) ;
+
+  }
+
+
+  [data-menu="list"]{
+ display: none !important; 
+position: absolute;
+background: #fb5;
+width: 150px;
+z-index: 200;
+padding: 60px 0 20px 0;
+top: 0;
+box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+  }
+
+  [data-menu="list"].ativo{
+    display: block !important;
+    animation: show-rigth .3s forwards;
+  }
+
+.drop-menu{
+  position: static;
+  border: none;
+
+}
+}
