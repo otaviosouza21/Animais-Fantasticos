@@ -1,0 +1,50 @@
+[data-dropmenu]{
+position: relative;
+
+}
+
+.drop-menu{
+  position: absolute;
+  background-color: #e54;
+  border: solid 2px #333;
+  z-index: 200;
+  display: none !important;
+}
+
+
+
+[data-dropmenu]:hover .drop-menu,
+[data-dropmenu].ativo .drop-menu{
+  display: block !important;
+  animation: show-up 0.3s forwards;
+}
+
+@keyframes show-up{
+  from{
+    opacity: 0;
+    transform: translate3d(0,30px,0);
+  }
+
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+
+.drop-menu li a:hover{
+color: white;
+}
+
+.drop-menu::before{
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -9px;
+  z-index: 500;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+  border-bottom: 10px solid #e54;
+
+}

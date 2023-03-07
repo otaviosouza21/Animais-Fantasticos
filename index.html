@@ -20,6 +20,15 @@
   <nav class="menu" data-menu="suave">
     <ul>
       <li><a href="#animais">Animais</a></li>
+      <li data-dropmenu>
+        <a href="./">Sobre</a>
+        <ul class="drop-menu">
+          <li><a href="empresa.html">A Empresa</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="socios.html">Socios</a></li>
+          <li><a href="investidoes.html">investidores</a></li>
+        </ul>
+      </li>
       <li><a href="#faq">Faq</a></li>
       <li><a href="#contato">Contato</a></li>
       <li><a data-modal="abrir" href="http://origamid.com">Entrar→</a></li>
@@ -110,7 +119,7 @@
 
   <section class="grid-section contato" data-anime="scroll" id="contato">
     <h1 class="titulo">Contato</h1>
-    <div class="mapa">
+    <div class="mapa" data-tooltip aria-label="informacoes do mapa aqui rio de janeiro">
       <img src="./img/mapa.png" alt="mapa">
     </div>
     <ul class="dados">

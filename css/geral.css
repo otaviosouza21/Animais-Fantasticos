@@ -56,6 +56,8 @@ body{
   grid-gap: 20px;
   margin-bottom: 4rem;
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .titulo{
@@ -302,4 +304,12 @@ color: #E54;
   opacity: 1;
   transition: 0.3s;
   transform: translate3d(0, 0, 0);
+}
+
+.cube{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: goldenrod;
+  position: relative;
 }
