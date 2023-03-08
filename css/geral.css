@@ -313,3 +313,39 @@ color: #E54;
   background-color: goldenrod;
   position: relative;
 }
+
+.aberto::after{
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: green;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 1px solid black;
+  animation: piscaOn .5s infinite alternate;
+}
+
+@keyframes piscaOn {
+  from{
+    box-shadow: 0px 0px 5px 2px green;
+  }
+}
+
+.fechado::after{
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 1px solid black;
+  animation: piscaOff .5s infinite alternate;
+}
+
+@keyframes piscaOff {
+  from{
+    box-shadow: 0px 0px 5px 2px red;
+  }
+}
