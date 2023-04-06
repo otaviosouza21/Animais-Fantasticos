@@ -21,3 +21,5 @@ initMenuMobile();
 initFuncionamento();
 initFetachAnimais();
 initFetachBitcoin();
+
+

@@ -9,3 +9,5 @@ fetch('https://blockchain.info/ticker')
   .catch((erro) => {
     console.log(Error(erro));
   });
+
+

@@ -29,3 +29,4 @@ export default function initAnimaNumeros() {
   oberver = new MutationObserver(handleMutation);
   oberver.observe(observerTarget, { attributes: true });
 }
+
