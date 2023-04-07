@@ -1,23 +1,38 @@
-export default function initTabNav() {
-  const tabmenu = document.querySelectorAll('[data-tab="menu"] li');
-  const tabcontent = document.querySelectorAll('[data-tab="content"] section');
-
-  function ativaContent(index) {
-    tabcontent.forEach((section) => {
-      section.classList.remove('ativo');
-    });
-    const direcao = tabcontent[index].dataset.anime;
-    tabcontent[index].classList.add('ativo', direcao);
-  }
-
-  if (tabmenu && tabcontent) {
-    tabcontent[0].classList.add('ativo');
-
-    tabmenu.forEach((img, index) => {
-      img.addEventListener('click', () => {
-        ativaContent(index);
-      });
-    });
-  }
+export default class TabNav {
+constructor(menu,content){
+  this.tabmenu = document.querySelectorAll(menu);
+  this.tabcontent = document.querySelectorAll(content);
+  this.activeClass = 'ativo';
 }
-initTabNav(); // O CODIGO ACIMA SE REFERE A SELEÇÃO DE IMAGENS , ACOMPANHADAS DAS SEÇOES DE CADA ANIMAL
+
+  
+// ativa a tab de acordo com o index da mesma
+ativaContent(index) {
+    this.tabcontent.forEach((section) => {
+      section.classList.remove(this.activeClass);
+    });
+    const direcao = this.tabcontent[index].dataset.anime;
+    this.tabcontent[index].classList.add(this.activeClass, direcao);
+  }
+
+  // adiciona os eventos as tabs
+addTabNavEvent(){
+  this.tabmenu.forEach((img, index) => {
+    img.addEventListener('click', () => this.ativaContent(index));
+  });
+}
+
+
+init(){
+if(this.tabmenu.length && this.tabcontent.length){
+  
+//ativar primeiro item
+this.ativaContent(0);
+
+  this.addTabNavEvent();
+}
+  return this
+}
+
+}
+
