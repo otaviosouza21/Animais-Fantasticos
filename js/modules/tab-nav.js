@@ -22,7 +22,7 @@ addTabNavEvent(){
   });
 }
 
-
+//inicia
 init(){
 if(this.tabmenu.length && this.tabcontent.length){
   
