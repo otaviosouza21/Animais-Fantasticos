@@ -1,5 +1,5 @@
 export default function initFetachBitcoin() {}
-
+console.log('teste');
 fetch('https://blockchain.info/ticker')
   .then((response) => response.json())
   .then((json) => {
@@ -9,5 +9,3 @@ fetch('https://blockchain.info/ticker')
   .catch((erro) => {
     console.log(Error(erro));
   });
-
-
