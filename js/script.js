@@ -8,7 +8,7 @@ import fetchAnimais from './modules/fetch-animais.js';
 import initDropMenu from './modules/drop-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initFuncionamento from './modules/funcionamento.js';
-import initFetachBitcoin from './modules/fetch-bitcoin.js';
+import fetchBitcoin from './modules/fetch-bitcoin.js';
 import animacaoScroll from './modules/scroll-animacao.js';
 
 
@@ -29,11 +29,12 @@ toolTip.init();
 
 fetchAnimais('../../animaisapi.json','.numeros-grid');
 
+fetchBitcoin('https://blockchain.info/ticker','.btn-preco');
 
 initDropMenu();
 initMenuMobile();
 initFuncionamento();
-initFetachBitcoin();
+
 animacaoScroll();
 
 
