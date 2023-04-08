@@ -4,12 +4,14 @@ import TabNav from './modules/tab-nav.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import fetchAnimais from './modules/fetch-animais.js';
+import ScrollAnima from './modules/scroll-anima.js';
+
 
 import initDropMenu from './modules/drop-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initFuncionamento from './modules/funcionamento.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
-import animacaoScroll from './modules/scroll-animacao.js';
+
 
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
@@ -31,10 +33,13 @@ fetchAnimais('../../animaisapi.json','.numeros-grid');
 
 fetchBitcoin('https://blockchain.info/ticker','.btn-preco');
 
+const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
+scrollAnima.init();
+
 initDropMenu();
 initMenuMobile();
 initFuncionamento();
 
-animacaoScroll();
+
 
 
