@@ -8,8 +8,7 @@ import ScrollAnima from './modules/scroll-anima.js';
 import DropMenu from './modules/drop-menu.js'; 
 import MenuMobile from './modules/menu-mobile.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
-
-import initFuncionamento from './modules/funcionamento.js';
+import Funcionamento from './modules/funcionamento.js';
 
 
 
@@ -43,7 +42,10 @@ const menuMobile = new MenuMobile("[data-menu='button']",'[data-menu="list"]')
 menuMobile.init();
 
 
-initFuncionamento();
+const funcionamento = new Funcionamento('[data-semana]','aberto','fechado');
+console.log(funcionamento)
+funcionamento.init();
+
 
 
 
