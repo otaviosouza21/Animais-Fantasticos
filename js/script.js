@@ -43,7 +43,6 @@ menuMobile.init();
 
 
 const funcionamento = new Funcionamento('[data-semana]','aberto','fechado');
-console.log(funcionamento)
 funcionamento.init();
 
 
