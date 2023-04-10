@@ -2,7 +2,7 @@
 ### **Bem Vindo** !
 ### Este site foi construindo para fins didádicos , para pratica dos principais conceitos de **JavaScript**:
 
-![animais fantasticos site](animais fantasticos.jpg)
+![animais fantasticos site](https://github.com/otaviosouza21/Animais-Fantasticos/blob/master/animais%20fantasticos.jpg)
 
 #### Confira aqui algumas das habilidades que tive a oportunidade de colocar em pratica neste projeto:
  
