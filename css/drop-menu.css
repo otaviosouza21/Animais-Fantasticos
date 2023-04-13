@@ -48,3 +48,13 @@ color: white;
   border-bottom: 10px solid #e54;
 
 }
+
+
+@media (max-width:700px){
+  
+[data-dropmenu] .drop-menu{
+  display: block !important;
+  animation:  show-up .3s forwards;
+}
+
+}
